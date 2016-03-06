@@ -1,0 +1,23 @@
+# Optional.
+# Translations are passed as the Labels for lead properties.
+# If no translation is provided, both thisProperty and ThisProperty => This Property
+# LastName is commented out to illustrate both behaviors
+lead:
+#    LastName: Last Name
+    Email: Email
+    Company: Company
+    Description: Description
+    FirstName: First Name
+    Salutation: Salutation
+    Name: Name
+    Title: Title
+    City: City
+    State: State
+    PostalCode: Postal Code
+    Country: Country
+    Phone: Phone
+    MobilePhone: Mobile Phone
+    Fax: Fax
+    Website: Website
+    Industry: Industry
+    AnnualRevenue: Annual Revenue
