@@ -15,7 +15,7 @@ class DefaultController extends Controller
      */
     public function homeAction()
     {
-	    $text = file_get_contents('/var/www/html/sdk.documentlanding.com/README.md');
+	    $text = file_get_contents(__DIR__ . '/../../sdk-bundle/README.md'); 
 	    $html = $this->container->get('markdown.parser')->transformMarkdown($text);
         return new Response('<html><head><title>Welcome to Document Landing SDK</title></head><body>' . $html . '</body></html>');
     }
