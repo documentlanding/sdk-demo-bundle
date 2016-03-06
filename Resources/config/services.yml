@@ -1,7 +1,7 @@
 services:
 
     documentlanding.demo_manager:
-        class: DocumentLanding\DemoBundle\Service\SdkDemoManager
+        class: DocumentLanding\SdkDemoBundle\Service\SdkDemoManager
         public: true
         tags:
             - { name: kernel.event_subscriber  }
