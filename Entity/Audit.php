@@ -12,10 +12,10 @@ use Doctrine\ORM\Mapping as ORM;
 class Audit
 {
 
-	public function __construct()
-	{
-	    $this->created_at = new \DateTime('now');
-	}
+    public function __construct()
+    {
+        $this->created_at = new \DateTime('now');
+    }
 
     /**
      * @ORM\Id

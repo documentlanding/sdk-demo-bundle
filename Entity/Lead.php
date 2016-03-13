@@ -21,13 +21,13 @@ class Lead implements LeadInterface
      */
     private $id;
 
-	public function __construct()
-	{
-		$now = new \DateTime('now');
-	    $this->CreatedDate = $now;
-	    $this->LastModifiedDate = $now;
-	    $this->LeadSource = 'Document Landing';
-	}
+    public function __construct()
+    {
+        $now = new \DateTime('now');
+        $this->CreatedDate = $now;
+        $this->LastModifiedDate = $now;
+        $this->LeadSource = 'Document Landing';
+    }
 
     /**
      * @ORM\Column(type="string", length=50, nullable=false)
@@ -243,7 +243,7 @@ class Lead implements LeadInterface
      */
     public function getId()
     {
-	    return $this->id;
+        return $this->id;
     }
 
     /**
@@ -255,7 +255,7 @@ class Lead implements LeadInterface
      */
     public function setEmail($email)
     {
-	    $this->Email = $email;
+        $this->Email = $email;
     }
 
     /**
@@ -265,7 +265,7 @@ class Lead implements LeadInterface
      */
     public function getEmail()
     {
-	    return $this->Email;
+        return $this->Email;
     }
 
     /**
@@ -277,7 +277,7 @@ class Lead implements LeadInterface
      */
     public function setCompany($company)
     {
-	    $this->Company = $company;
+        $this->Company = $company;
     }
 
     /**
@@ -287,7 +287,7 @@ class Lead implements LeadInterface
      */
     public function getCompany()
     {
-	    return $this->Company;
+        return $this->Company;
     }
 
     /**
