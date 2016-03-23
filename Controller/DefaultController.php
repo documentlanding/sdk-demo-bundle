@@ -32,7 +32,7 @@ class DefaultController extends Controller
         $props = $this->getLeadProperties($lead);
 
         $html = '
-        <p><input name="api_key" placeholder="api_key" value="' . $config['api_key'] . '" /></p>
+        <p><input name="access_token" placeholder="access_token" value="' . $config['access_token'] . '" /></p>
         <p><input name="Id" placeholder="Id" /></p>';
 
         foreach($props as $prop) {
